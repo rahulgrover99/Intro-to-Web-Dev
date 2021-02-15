@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    body {
+      font-family: Verdana, Arial, sans-serif;
+    }
+    h1 {
+      color: white;
+      background-color: #61b3e7;
+    }
+    h1:hover {
+        color: #61b3e7;
+        background-color: #e6e8fa;
+        transition: all 400ms ease-in-out;
+    }
+
+    /* h1.clicked {
+    color: navy;
+    background-color: lightgray;
+    } */
+    h2 {
+      color: #FF645F;
+      margin-left: 40px;
+    border-bottom: 4px dotted black;
+
+    }
+  </style>
+
+  <!-- <link href="style.css" rel="stylesheet" /> -->
+    <title>Table of Contents</title>
+</head>
+<body >
+    <h1 onclick=handleClick(this)>Introduction</h1>
+    <h2>Whom this class is for?</h2>
+    <h1>HTML</h1>
+    <h2>What you will learn in this chapter</h2>
+    <h2>Summary</h2>
+    <h1>CSS</h1>
+    <h2>Recap</h2>
+    <h2>Conclusion</h2>
+    <script>
+        function handleClick(node){
+            var value = node.getAttribute('class') || '';
+            value = value === '' ? 'clicked' : '';
+            node.setAttribute('class', value);
+        }
+    </script>
+  </body>
+<!-- <body style="font-family: Verdana, Arial, sans-serif">
+    
+    <h1 style="color: white; background-color:#61b3e7">
+        Introduction
+    </h1>
+    <h2 style="color: #FF645F; margin-left: 40px">
+        Whom this book is for?
+    </h2>
+    <h2 style="color: #FF645F; margin-left: 40px">
+        Errata
+    </h2>
+    <h1 style="color: white; background-color:#61b3e7">
+        Chapter 1
+    </h1>
+    <h2 style="color: #FF645F; margin-left: 40px">
+        What you will learn in this chapter
+    </h2>
+    <h2 style="color: #FF645F; margin-left: 40px">
+        Summary
+    </h2>
+    <h1 style="color: white; background-color:#61b3e7">
+        Chapter 2
+    </h1>
+    <h2 style="color: #FF645F; margin-left: 40px">
+        Recap
+    </h2>
+    <h2 style="color: #FF645F; margin-left: 40px">
+        Conclusion
+    </h2>
+</body> -->
+</html>
